@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: greenyellow;
+}
+.navbar{
+    background-color: rgba(3, 133,119, 1);
+    margin-left: 0;
+    color: white;
+    height: 30px;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: rgba(109, 109, 109, 1);
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.number-input {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 0 10px;
+}
+
+.number-input:focus {
+    outline: none;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c8c8c8;
+}
+
+.sum-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sum-row h2 {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.sum-input {
+    width: 60px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;
+}

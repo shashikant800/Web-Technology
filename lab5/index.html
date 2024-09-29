@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        <div class="navbar">playcards</div>
+        <h1>Play Cards</h1>
+        <div class="card-row">
+            <input type="number" class="number-input" id="card1" min="1" max="13" value="5" oninput="validateInput(this)">
+            <input type="number" class="number-input" id="card2" min="1" max="13" value="7" oninput="validateInput(this)">
+            <input type="number" class="number-input" id="card3" min="1" max="13" value="6" oninput="validateInput(this)">
+            <input type="number" class="number-input" id="card4" min="1" max="13" value="9" oninput="validateInput(this)">
+            <input type="number" class="number-input" id="card5" min="1" max="13" value="9" oninput="validateInput(this)">
+        </div>
+
+        <div class="button-row">
+            <button id="selectButton" onclick="selectCards()">Select Cards</button>
+            <button id="sortButton" onclick="sortCards()">Sort</button>
+        </div>
+
+        <div class="sum-row">
+            <h2>SUM</h2>
+            <input type="text" id="sumResult" class="sum-input" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
