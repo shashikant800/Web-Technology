@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parent Window</title>
+</head>
+<body>
+    <button onclick="openImages()">Images</button>
+    <button onclick="openTables()">Tables</button>
+    <button onclick="openLists()">Lists</button>
+    <button onclick="closeWindows()">Close Windows</button>
+
+    <script>
+        function openImages() {
+            var childWindow = window.open("", "childWindow", "width=400,height=300");
+            childWindow.document.write("<h1>Images</h1>");
+            for (var i = 1; i <= 4; i++) {
+                childWindow.document.write("<img src='image" + i + ".jpg' alt='Image " + i + "'>");
+            }
+        }
+
+        function openTables() {
+            var childWindow = window.open("", "childWindow", "width=400,height=300");
+            childWindow.document.write("<h1>Table</h1>");
+            childWindow.document.write("<table>");
+            childWindow.document.write("<tr><th>Name</th><th>Roll No</th><th>Branch</th></tr>");
+            for (var i = 1; i <= 3; i++) {
+                childWindow.document.write("<tr><td>Student " + i + "</td><td>" + i+50 + "</td><td>CSE</td></tr>");
+            }
+            childWindow.document.write("</table>");
+        }
+
+        function openLists() {
+            var childWindow = window.open("", "childWindow", "width=400,height=300");
+            childWindow.document.write("<h1>Lists</h1>");
+            childWindow.document.write("<ul>");
+            childWindow.document.write("<li>CSE</li>");
+            childWindow.document.write("<li>ECE</li>");
+            childWindow.document.write("<li>ME</li>");
+            childWindow.document.write("</ul>");
+        }
+
+        function closeWindows() {
+            var childWindows = window.open("", "childWindow");
+            childWindows.close();
+            window.close();
+        }
+    </script>
+</body>
+</html>
